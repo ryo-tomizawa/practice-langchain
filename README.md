@@ -1,7 +1,6 @@
 # プロジェクト概要
 
-このプロジェクトでは、LLM APIキーを使用した基本的な方法と、<br>
-エージェントデザインパターンに基づいた実装手法について共有します。
+このプロジェクトでは、LangChainの基本的な利用方法について共有しています。<br>
 
 
 ## ディレクトリ構成
@@ -10,7 +9,8 @@ agent-design-pattern/
 ├── .env.sample
 ├── .gitignore
 ├── 00.basic_sample/
-├── 01.multi_agent/
+├── 01.multi_chain/
+├── 02.multi_agent/
 ├── to be continued
 └── ...
 ```
