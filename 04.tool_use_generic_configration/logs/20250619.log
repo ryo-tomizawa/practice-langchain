@@ -1,0 +1,391 @@
+2025-06-19 11:26:08,155 - main - INFO - Starting application
+2025-06-19 11:26:08,156 - main - ERROR - Application error - Error: BaseAgent.__init__() missing 2 required positional arguments: 'tools' and 'system_prompt'
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\main.py", line 20, in main
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\coordinator_agent.py", line 10, in __init__
+    super().__init__()
+TypeError: BaseAgent.__init__() missing 2 required positional arguments: 'tools' and 'system_prompt'
+2025-06-19 11:28:30,489 - main - INFO - Starting application
+2025-06-19 11:28:30,490 - CoordinatorAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:28:30,890 - CoordinatorAgent - INFO - Agent created successfully
+2025-06-19 11:28:30,891 - WeatherAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:28:30,909 - WeatherAgent - INFO - Agent created successfully
+2025-06-19 11:28:30,909 - WeatherAgent - INFO - WeatherAgent initialized
+2025-06-19 11:28:30,911 - main - ERROR - Application error - Error: BaseAgent.__init__() missing 2 required positional arguments: 'tools' and 'system_prompt'
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\main.py", line 19, in main
+    coordinator = CoordinatorAgent()
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\coordinator_agent.py", line 22, in __init__
+    self.food_agent = FoodAgent()
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\food_agent.py", line 8, in __init__
+    super().__init__()
+TypeError: BaseAgent.__init__() missing 2 required positional arguments: 'tools' and 'system_prompt'
+2025-06-19 11:29:27,401 - main - INFO - Starting application
+2025-06-19 11:29:27,402 - CoordinatorAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:29:27,441 - CoordinatorAgent - INFO - Agent created successfully
+2025-06-19 11:29:27,442 - WeatherAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:29:27,459 - WeatherAgent - INFO - Agent created successfully
+2025-06-19 11:29:27,460 - WeatherAgent - INFO - WeatherAgent initialized
+2025-06-19 11:29:27,460 - FoodAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:29:27,477 - FoodAgent - INFO - Agent created successfully
+2025-06-19 11:29:27,477 - FoodAgent - INFO - FoodAgent initialized
+2025-06-19 11:29:27,477 - CoordinatorAgent - INFO - CoordinatorAgent initialized
+2025-06-19 11:29:43,188 - CoordinatorAgent - INFO - Processing query: 東京の天気は？
+2025-06-19 11:29:43,189 - CoordinatorAgent - INFO - Extracted city: 東京
+2025-06-19 11:29:43,189 - CoordinatorAgent - INFO - Weather information requested
+2025-06-19 11:29:43,190 - WeatherAgent - INFO - Getting weather info for city: 東京
+2025-06-19 11:29:45,059 - src.tools.weather_tools - INFO - Getting weather for city: 東京
+2025-06-19 11:29:50,497 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:30:00,061 - CoordinatorAgent - INFO - Processing query: カリフォルニアの天気は？
+2025-06-19 11:30:00,061 - CoordinatorAgent - WARNING - No city found in query
+2025-06-19 11:30:00,061 - CoordinatorAgent - INFO - Extracted city: 東京
+2025-06-19 11:30:00,063 - CoordinatorAgent - INFO - Weather information requested
+2025-06-19 11:30:00,063 - WeatherAgent - INFO - Getting weather info for city: 東京
+2025-06-19 11:30:01,025 - src.tools.weather_tools - INFO - Getting weather for city: 東京
+2025-06-19 11:30:06,105 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:30:21,047 - CoordinatorAgent - INFO - Processing query: ニューヨークの天気は？
+2025-06-19 11:30:21,047 - CoordinatorAgent - WARNING - No city found in query
+2025-06-19 11:30:21,047 - CoordinatorAgent - INFO - Extracted city: 東京
+2025-06-19 11:30:21,049 - CoordinatorAgent - INFO - Weather information requested
+2025-06-19 11:30:21,049 - WeatherAgent - INFO - Getting weather info for city: 東京
+2025-06-19 11:30:23,024 - src.tools.weather_tools - INFO - Getting weather for city: 東京
+2025-06-19 11:30:26,324 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:30:30,978 - main - INFO - Application terminated by user
+2025-06-19 11:34:29,949 - main - INFO - Starting application
+2025-06-19 11:34:29,950 - CoordinatorAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:34:29,991 - CoordinatorAgent - INFO - Agent created successfully
+2025-06-19 11:34:29,992 - WeatherAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:34:30,007 - WeatherAgent - INFO - Agent created successfully
+2025-06-19 11:34:30,008 - WeatherAgent - INFO - WeatherAgent initialized
+2025-06-19 11:34:30,008 - FoodAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:34:30,023 - FoodAgent - INFO - Agent created successfully
+2025-06-19 11:34:30,024 - FoodAgent - INFO - FoodAgent initialized
+2025-06-19 11:34:30,024 - CoordinatorAgent - INFO - CoordinatorAgent initialized
+2025-06-19 11:34:37,069 - CoordinatorAgent - INFO - Processing query: ニューヨークの天気は？
+2025-06-19 11:34:37,069 - CoordinatorAgent - INFO - Extracted city: ニューヨーク
+2025-06-19 11:34:37,070 - CoordinatorAgent - INFO - Weather information requested
+2025-06-19 11:34:37,070 - WeatherAgent - INFO - Getting weather info for city: ニューヨーク
+2025-06-19 11:34:38,854 - src.tools.weather_tools - INFO - Getting weather for city: ニューヨーク
+2025-06-19 11:34:45,542 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:35:07,954 - CoordinatorAgent - INFO - Processing query: モスクワの現在の温度は？
+2025-06-19 11:35:07,954 - CoordinatorAgent - INFO - Extracted city: モスクワの現在
+2025-06-19 11:35:07,954 - CoordinatorAgent - INFO - Weather information requested
+2025-06-19 11:35:07,955 - WeatherAgent - INFO - Getting weather info for city: モスクワの現在
+2025-06-19 11:35:16,672 - src.tools.weather_tools - INFO - Getting weather for city: モスクワ
+2025-06-19 11:35:21,637 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:35:46,835 - CoordinatorAgent - INFO - Processing query: サンフランシスコ発祥の料理はなにかある？
+2025-06-19 11:35:46,835 - CoordinatorAgent - INFO - Extracted city: サンフランシスコ発祥
+2025-06-19 11:35:46,835 - CoordinatorAgent - INFO - Food information requested
+2025-06-19 11:35:46,836 - FoodAgent - INFO - Getting food info for city: サンフランシスコ発祥
+2025-06-19 11:35:48,895 - src.tools.food_tools - INFO - Getting food info for city: サンフランシスコ
+2025-06-19 11:35:52,199 - src.tools.food_tools - INFO - Selected page: Seven of Seven
+2025-06-19 11:35:59,157 - src.tools.food_tools - INFO - Getting food info for city: サンフランシスコ
+2025-06-19 11:35:59,158 - src.tools.food_tools - INFO - Selected page: Seven of Seven
+2025-06-19 11:36:04,706 - FoodAgent - INFO - Food info retrieved successfully
+2025-06-19 11:36:04,707 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:36:35,060 - CoordinatorAgent - INFO - Processing query: バルセロナ発祥の料理はなにかある？
+2025-06-19 11:36:35,060 - CoordinatorAgent - INFO - Extracted city: バルセロナ発祥
+2025-06-19 11:36:35,061 - CoordinatorAgent - INFO - Food information requested
+2025-06-19 11:36:35,061 - FoodAgent - INFO - Getting food info for city: バルセロナ発祥
+2025-06-19 11:36:36,502 - src.tools.food_tools - INFO - Getting food info for city: バルセロナ
+2025-06-19 11:36:39,725 - src.tools.food_tools - WARNING - No search results found
+2025-06-19 11:36:39,726 - src.tools.food_tools - ERROR - Unexpected error: 料理情報が見つかりませんでした。
+2025-06-19 11:36:39,727 - FoodAgent - ERROR - Error processing query - Error: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。 - Error: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 33, in get_food_info
+    raise FoodToolError("料理情報が見つかりませんでした。")
+src.utils.exceptions.FoodToolError: 料理情報が見つかりませんでした。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\base_agent.py", line 85, in process_query
+    response = self.agent_executor.invoke({
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 170, in invoke
+    raise e
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 160, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1624, in _call
+    next_step_output = self._take_next_step(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in _take_next_step
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in <listcomp>
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1415, in _iter_next_step
+    yield self._perform_agent_action(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1437, in _perform_agent_action
+    observation = tool.run(
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 725, in run
+    raise error_to_raise
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 694, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\structured.py", line 80, in _run
+    return self.func(*args, **kwargs)
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 103, in get_food_info
+    raise FoodToolError(f"予期せぬエラーが発生しました: {str(e)}")
+src.utils.exceptions.FoodToolError: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+2025-06-19 11:36:39,743 - FoodAgent - ERROR - Error getting food info - Error: Error processing query: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 33, in get_food_info
+    raise FoodToolError("料理情報が見つかりませんでした。")
+src.utils.exceptions.FoodToolError: 料理情報が見つかりませんでした。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\base_agent.py", line 85, in process_query
+    response = self.agent_executor.invoke({
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 170, in invoke
+    raise e
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 160, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1624, in _call
+    next_step_output = self._take_next_step(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in _take_next_step
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in <listcomp>
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1415, in _iter_next_step
+    yield self._perform_agent_action(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1437, in _perform_agent_action
+    observation = tool.run(
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 725, in run
+    raise error_to_raise
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 694, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\structured.py", line 80, in _run
+    return self.func(*args, **kwargs)
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 103, in get_food_info
+    raise FoodToolError(f"予期せぬエラーが発生しました: {str(e)}")
+src.utils.exceptions.FoodToolError: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\food_agent.py", line 23, in get_food_info
+    result = self.process_query(query)
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\base_agent.py", line 94, in process_query
+    raise AgentError(f"Error processing query: {str(e)}")
+src.utils.exceptions.AgentError: Error processing query: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+2025-06-19 11:36:39,745 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:36:57,273 - main - INFO - Application terminated by user
+2025-06-19 11:43:39,081 - main - INFO - Starting application
+2025-06-19 11:43:39,083 - CoordinatorAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:43:39,123 - CoordinatorAgent - INFO - Agent created successfully
+2025-06-19 11:43:39,124 - WeatherAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:43:39,139 - WeatherAgent - INFO - Agent created successfully
+2025-06-19 11:43:39,140 - WeatherAgent - INFO - WeatherAgent initialized
+2025-06-19 11:43:39,140 - FoodAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:43:39,158 - FoodAgent - INFO - Agent created successfully
+2025-06-19 11:43:39,158 - FoodAgent - INFO - FoodAgent initialized
+2025-06-19 11:43:39,158 - CoordinatorAgent - INFO - CoordinatorAgent initialized
+2025-06-19 11:43:45,926 - CoordinatorAgent - INFO - Processing query: バルセロナ発祥の料理はなにかある？
+2025-06-19 11:43:46,527 - CoordinatorAgent - INFO - Extracted city: バルセロナ
+2025-06-19 11:43:46,528 - CoordinatorAgent - INFO - Food information requested
+2025-06-19 11:43:46,528 - FoodAgent - INFO - Getting food info for city: バルセロナ
+2025-06-19 11:43:47,678 - src.tools.food_tools - INFO - Getting food info for city: バルセロナ
+2025-06-19 11:43:51,462 - src.tools.food_tools - WARNING - No search results found
+2025-06-19 11:43:51,463 - src.tools.food_tools - ERROR - Unexpected error: 料理情報が見つかりませんでした。
+2025-06-19 11:43:51,464 - FoodAgent - ERROR - Error processing query - Error: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。 - Error: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 33, in get_food_info
+    raise FoodToolError("料理情報が見つかりませんでした。")
+src.utils.exceptions.FoodToolError: 料理情報が見つかりませんでした。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\base_agent.py", line 85, in process_query
+    response = self.agent_executor.invoke({
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 170, in invoke
+    raise e
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 160, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1624, in _call
+    next_step_output = self._take_next_step(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in _take_next_step
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in <listcomp>
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1415, in _iter_next_step
+    yield self._perform_agent_action(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1437, in _perform_agent_action
+    observation = tool.run(
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 725, in run
+    raise error_to_raise
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 694, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\structured.py", line 80, in _run
+    return self.func(*args, **kwargs)
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 103, in get_food_info
+    raise FoodToolError(f"予期せぬエラーが発生しました: {str(e)}")
+src.utils.exceptions.FoodToolError: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+2025-06-19 11:43:51,468 - FoodAgent - ERROR - Error getting food info - Error: Error processing query: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 33, in get_food_info
+    raise FoodToolError("料理情報が見つかりませんでした。")
+src.utils.exceptions.FoodToolError: 料理情報が見つかりませんでした。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\base_agent.py", line 85, in process_query
+    response = self.agent_executor.invoke({
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 170, in invoke
+    raise e
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 160, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1624, in _call
+    next_step_output = self._take_next_step(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in _take_next_step
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in <listcomp>
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1415, in _iter_next_step
+    yield self._perform_agent_action(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1437, in _perform_agent_action
+    observation = tool.run(
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 725, in run
+    raise error_to_raise
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 694, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\structured.py", line 80, in _run
+    return self.func(*args, **kwargs)
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 103, in get_food_info
+    raise FoodToolError(f"予期せぬエラーが発生しました: {str(e)}")
+src.utils.exceptions.FoodToolError: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\food_agent.py", line 23, in get_food_info
+    result = self.process_query(query)
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\base_agent.py", line 94, in process_query
+    raise AgentError(f"Error processing query: {str(e)}")
+src.utils.exceptions.AgentError: Error processing query: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+2025-06-19 11:43:51,470 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:44:20,891 - CoordinatorAgent - INFO - Processing query: サンフランシスコ発祥の料理はなにかある？
+2025-06-19 11:44:21,391 - CoordinatorAgent - INFO - Extracted city: サンフランシスコ
+2025-06-19 11:44:21,392 - CoordinatorAgent - INFO - Food information requested
+2025-06-19 11:44:21,392 - FoodAgent - INFO - Getting food info for city: サンフランシスコ
+2025-06-19 11:44:22,675 - src.tools.food_tools - INFO - Getting food info for city: サンフランシスコ
+2025-06-19 11:44:25,970 - src.tools.food_tools - INFO - Selected page: List of Lupin the 3rd Part II episodes
+2025-06-19 11:44:33,203 - src.tools.food_tools - INFO - Getting food info for city: サンフランシスコ
+2025-06-19 11:44:33,204 - src.tools.food_tools - INFO - Selected page: List of Lupin the 3rd Part II episodes
+2025-06-19 11:44:38,757 - FoodAgent - INFO - Food info retrieved successfully
+2025-06-19 11:44:38,758 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:45:01,452 - CoordinatorAgent - INFO - Processing query: マドリード発祥の料理はなにかある？
+2025-06-19 11:45:01,908 - CoordinatorAgent - INFO - Extracted city: マドリード
+2025-06-19 11:45:01,909 - CoordinatorAgent - INFO - Food information requested
+2025-06-19 11:45:01,910 - FoodAgent - INFO - Getting food info for city: マドリード
+2025-06-19 11:45:04,247 - src.tools.food_tools - INFO - Getting food info for city: マドリード
+2025-06-19 11:45:07,445 - src.tools.food_tools - WARNING - No search results found
+2025-06-19 11:45:07,446 - src.tools.food_tools - ERROR - Unexpected error: 料理情報が見つかりませんでした。
+2025-06-19 11:45:07,447 - FoodAgent - ERROR - Error processing query - Error: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。 - Error: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 33, in get_food_info
+    raise FoodToolError("料理情報が見つかりませんでした。")
+src.utils.exceptions.FoodToolError: 料理情報が見つかりませんでした。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\base_agent.py", line 85, in process_query
+    response = self.agent_executor.invoke({
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 170, in invoke
+    raise e
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 160, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1624, in _call
+    next_step_output = self._take_next_step(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in _take_next_step
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in <listcomp>
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1415, in _iter_next_step
+    yield self._perform_agent_action(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1437, in _perform_agent_action
+    observation = tool.run(
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 725, in run
+    raise error_to_raise
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 694, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\structured.py", line 80, in _run
+    return self.func(*args, **kwargs)
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 103, in get_food_info
+    raise FoodToolError(f"予期せぬエラーが発生しました: {str(e)}")
+src.utils.exceptions.FoodToolError: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+2025-06-19 11:45:07,450 - FoodAgent - ERROR - Error getting food info - Error: Error processing query: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 33, in get_food_info
+    raise FoodToolError("料理情報が見つかりませんでした。")
+src.utils.exceptions.FoodToolError: 料理情報が見つかりませんでした。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\base_agent.py", line 85, in process_query
+    response = self.agent_executor.invoke({
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 170, in invoke
+    raise e
+  File "D:\Python\Python310\lib\site-packages\langchain\chains\base.py", line 160, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1624, in _call
+    next_step_output = self._take_next_step(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in _take_next_step
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1330, in <listcomp>
+    [
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1415, in _iter_next_step
+    yield self._perform_agent_action(
+  File "D:\Python\Python310\lib\site-packages\langchain\agents\agent.py", line 1437, in _perform_agent_action
+    observation = tool.run(
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 725, in run
+    raise error_to_raise
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\base.py", line 694, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+  File "D:\Python\Python310\lib\site-packages\langchain_core\tools\structured.py", line 80, in _run
+    return self.func(*args, **kwargs)
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\tools\food_tools.py", line 103, in get_food_info
+    raise FoodToolError(f"予期せぬエラーが発生しました: {str(e)}")
+src.utils.exceptions.FoodToolError: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\food_agent.py", line 23, in get_food_info
+    result = self.process_query(query)
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\base_agent.py", line 94, in process_query
+    raise AgentError(f"Error processing query: {str(e)}")
+src.utils.exceptions.AgentError: Error processing query: 予期せぬエラーが発生しました: 料理情報が見つかりませんでした。
+2025-06-19 11:45:07,452 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:49:52,589 - main - INFO - Application terminated by user
+2025-06-19 11:49:56,041 - main - INFO - Starting application
+2025-06-19 11:49:56,042 - CoordinatorAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:49:56,080 - CoordinatorAgent - INFO - Agent created successfully
+2025-06-19 11:49:56,082 - WeatherAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:49:56,097 - WeatherAgent - INFO - Agent created successfully
+2025-06-19 11:49:56,097 - WeatherAgent - INFO - WeatherAgent initialized
+2025-06-19 11:49:56,098 - FoodAgent - INFO - BaseAgent initialized with model: gpt-4
+2025-06-19 11:49:56,116 - FoodAgent - INFO - Agent created successfully
+2025-06-19 11:49:56,116 - FoodAgent - INFO - FoodAgent initialized
+2025-06-19 11:49:56,117 - CoordinatorAgent - INFO - CoordinatorAgent initialized
+2025-06-19 11:50:07,784 - CoordinatorAgent - INFO - Processing query: カリフォルニアの郷土料理を教えて下さい。
+2025-06-19 11:50:08,418 - CoordinatorAgent - INFO - Extracted city: 東京
+2025-06-19 11:50:08,419 - CoordinatorAgent - INFO - Food information requested
+2025-06-19 11:50:08,419 - FoodAgent - INFO - Getting food info for city: 東京
+2025-06-19 11:50:14,819 - src.tools.food_tools - INFO - Getting food info for city: 東京
+2025-06-19 11:50:18,961 - src.tools.food_tools - INFO - Selected page: List of Food Wars! Shokugeki no Soma episodes
+2025-06-19 11:50:32,207 - src.tools.food_tools - INFO - Getting food info for city: 東京
+2025-06-19 11:50:36,181 - src.tools.food_tools - INFO - Selected page: List of Food Wars! Shokugeki no Soma episodes
+2025-06-19 11:50:43,018 - FoodAgent - INFO - Food info retrieved successfully
+2025-06-19 11:50:43,019 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 11:51:10,636 - CoordinatorAgent - INFO - Processing query: ニューヨークで有名な料理はなんですか？
+2025-06-19 11:51:11,692 - CoordinatorAgent - INFO - Extracted city: ニューヨーク
+2025-06-19 11:51:11,692 - CoordinatorAgent - INFO - Food information requested
+2025-06-19 11:51:11,693 - FoodAgent - INFO - Getting food info for city: ニューヨーク
+2025-06-19 11:51:13,436 - src.tools.food_tools - INFO - Getting food info for city: ニューヨーク
+2025-06-19 11:51:18,667 - src.tools.food_tools - INFO - Selected page: FOOD (New York City restaurant)
+2025-06-19 11:51:35,634 - FoodAgent - INFO - Food info retrieved successfully
+2025-06-19 11:51:35,635 - CoordinatorAgent - INFO - Query processed successfully
+2025-06-19 22:09:10,427 - main - INFO - Application terminated by user

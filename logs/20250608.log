@@ -1,0 +1,8 @@
+2025-06-08 23:37:49,678 - basic_example - INFO - Starting basic example
+2025-06-08 23:37:49,678 - basic_example - ERROR - Error in basic example - Error: BaseAgent.__init__() missing 2 required positional arguments: 'tools' and 'system_prompt'
+Traceback (most recent call last):
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\examples\basic_usage.py", line 28, in main
+    coordinator = CoordinatorAgent()
+  File "d:\data\study\practice-langchain\04.tool_use_generic_configration\src\agents\coordinator_agent.py", line 10, in __init__
+    super().__init__()
+TypeError: BaseAgent.__init__() missing 2 required positional arguments: 'tools' and 'system_prompt'
