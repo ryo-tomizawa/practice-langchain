@@ -35,7 +35,7 @@ class BaseAgent:
         
         # モデルの初期化
         self.llm = ChatOpenAI(
-            model_name=model_name,
+            model=model_name,
             temperature=temperature,
             api_key=os.environ["OPEN_AI_KEY"]
         )
@@ -91,4 +91,4 @@ class BaseAgent:
             
         except Exception as e:
             self.logger.error(f"Error processing query - Error: {str(e)}", exc_info=e)
-            raise AgentError(f"Error processing query: {str(e)}") 
+            raise AgentError(f"Error processing query: {str(e)}")
